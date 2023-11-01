@@ -1,6 +1,5 @@
 package com.yoshida.net;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.ServerSocket;
@@ -17,7 +16,6 @@ public class ServerProgram1 {
             // 接続がされたのでデータ入力ストリームを取得
             InputStream io = socket.getInputStream();
 
-            ByteArrayOutputStream data = new ByteArrayOutputStream();
             // データを読み込むための領域を確保
             byte[] buffer = new byte[1024];
             int len;
